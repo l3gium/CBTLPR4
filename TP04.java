@@ -13,10 +13,10 @@ public class TP04
         System.out.print(d2.diasTranscorridos() + "\n");
         d2.apresentaDataAtual();
 
-        // Data d1 = new Data();
+         Data d1 = new Data();
 
-        // System.out.println("Ano: " + d1.retAno());
-        // System.out.println("Mes: " + d1.retMes());
-        // System.out.println("Dia: " + d1.retDia());
+         System.out.println("Ano: " + d1.retAno());
+         System.out.println("Mes: " + d1.retMes());
+         System.out.println("Dia: " + d1.retDia());
     }
 }
