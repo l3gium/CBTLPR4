@@ -49,4 +49,4 @@ DateFormat empregando o seguinte método: getDateInstance(DateFormat.FULL);
 Agora, desenvolva um programa capaz de testar a classe e os métodos desenvolvidos no 
 exercício anterior.
 
-<img src="assets/TP04.gif"
+<img src="assets/TP04.gif">
