@@ -27,9 +27,16 @@ class Data
 
     public Data(int d, int m, int a) 
     {
-        dia = d;
-        mes = m;
-        ano = a;
+        try 
+        {
+            entraAno(a);
+            entraMes(m);
+            entraDia(d);
+        } 
+        catch (Exception e) 
+        {
+            System.out.println("Erro ao entrar com a data: " + e.getMessage());
+        }
     }
 
     public void entraDia(int d)
@@ -93,7 +100,7 @@ class Data
                     break;
                 
                 default:
-                    System.out.println("Mês inválido.");
+                    System.out.println("Mes invalido.");
                     break;
             }
         } 
@@ -114,7 +121,7 @@ class Data
 
             while(this.mes < 1 || this.mes > 12)
             {
-                System.out.print("Mes inválido. Tente novamente: ");
+                System.out.print("Mes invalido. Tente novamente: ");
                 this.mes = scan.nextInt();
             }
         } 
